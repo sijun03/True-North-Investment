@@ -3,162 +3,422 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>True North Investment Advisory</title>
+  <title>True North Investment | Private Investment Office</title>
   <meta
     name="description"
-    content="True North Investment Advisory is a family investment office focused on risk-adjusted returns, capital preservation, and flexible long-term investment strategy."
+    content="True North Investment is a private investment office deploying internal capital to identify, acquire, and build meaningful businesses for the long term, with a focus on the United States and select international markets."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Belleza&family=Ruluko&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
       <a href="#home" class="brand">
-        <img src="Logo.png" alt="True North Investment logo" class="brand-logo" />
-        <div class="brand-text">
-          <strong>True North Investment</strong>
-          <span>Investment Advisory</span>
-        </div>
+        <img
+          src="Logo.png"
+          alt=""
+          class="brand-logo"
+          width="44"
+          height="44"
+          onerror="this.hidden=true"
+        />
+        <span class="brand-text">
+          <span class="brand-name">True North Investment</span>
+          <span class="brand-sub">Private Investment Office</span>
+        </span>
       </a>
-      <nav aria-label="Primary navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#approach">Our Approach</a></li>
-          <li><a href="#about">Who We Are</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" data-nav>Home</a></li>
+          <li><a href="#approach" data-nav>Our Approach</a></li>
+          <li><a href="#acquisitions" data-nav>Acquisitions</a></li>
+          <li><a href="#about" data-nav>About Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Family Investment Office</p>
-          <h1>Investment strategy focused on growth, risk discipline, and capital preservation.</h1>
-          <p>
-            We advise investors to allocate into assets with strong return potential while balancing
-            downside protection. As a family-based capital platform, our flexibility allows us to make
-            thoughtful, criteria-driven decisions and explore a broad range of opportunities.
+      <div class="hero-media" aria-hidden="true">
+        <img src="hero.jpg" alt="" width="1920" height="1080" fetchpriority="high" />
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+      </div>
+      <div class="container hero-layout">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Private Investment Office</p>
+          <h1>Acquiring and building businesses<br />for the long term.</h1>
+          <p class="hero-sub">
+            True North Investment is a private investment office. We deploy our own capital to
+            identify, acquire, and build meaningful businesses — with discipline, patience, and a
+            long-term horizon.
+          </p>
+          <p class="hero-body">
+            We are not a fund. We do not raise capital from outside investors. We work with a clear
+            mandate: find the right businesses, evaluate them rigorously, acquire them on the right
+            terms, and commit to building them over time.
           </p>
           <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Speak With Us</a>
-            <a href="#approach" class="btn btn-secondary">View Our Approach</a>
+            <a href="#acquisitions" class="btn btn-primary">Our Acquisition Criteria</a>
+            <a href="#about" class="btn btn-ghost">About True North</a>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Investment focus areas">
-          <h2>Investment Focus</h2>
-          <ul>
-            <li>Risk-adjusted portfolio construction</li>
-            <li>Short and long-term opportunities</li>
-            <li>Capital preservation strategy</li>
-            <li>Flexible and criteria-based allocations</li>
-          </ul>
-        </aside>
+      </div>
+      <div class="container focus-dock">
+        <div class="focus-cards">
+          <article class="focus-card reveal">
+            <span class="focus-index">01</span>
+            <h2>Private equity ownership</h2>
+            <p>
+              Control-oriented investment in established businesses with durable fundamentals and
+              long-term potential.
+            </p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="focus-index">02</span>
+            <h2>Strategic acquisitions</h2>
+            <p>
+              Identifying, evaluating, and acquiring businesses we can own and build as part of our
+              permanent portfolio.
+            </p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="focus-index">03</span>
+            <h2>Capital discipline</h2>
+            <p>
+              Patient internal capital, rigorous underwriting, and clear-eyed risk management across
+              every decision we make.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="approach" class="section">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Our Approach</p>
-          <h2>A portfolio optimized for consistent, risk-adjusted returns.</h2>
-        </div>
-        <p class="lead">
-          Our portfolio framework is designed for investors seeking consistency through both short and
-          long-term investments, while maintaining a disciplined approach to preserving capital.
-        </p>
-        <div class="cards">
-          <article class="card">
-            <h3>Mortgages & Deeds of Trust</h3>
-            <p>Structured opportunities with asset-backed security and defined income characteristics.</p>
-          </article>
-          <article class="card">
-            <h3>Discounted Loans</h3>
-            <p>Selective credit opportunities evaluated on quality, downside risk, and yield profile.</p>
-          </article>
-          <article class="card">
-            <h3>Marketable Securities</h3>
-            <p>Liquid exposures aligned to portfolio balance, return objectives, and market conditions.</p>
-          </article>
-          <article class="card">
-            <h3>Private Equities</h3>
-            <p>Growth-oriented allocations in businesses that match our long-term investment criteria.</p>
-          </article>
-          <article class="card">
-            <h3>Real Estate Funds</h3>
-            <p>Diversified real asset exposure with an emphasis on resilient income and capital value.</p>
-          </article>
+        <div class="approach-top">
+          <div class="approach-visual reveal">
+            <img
+              src="approach.jpg"
+              alt="Professional boardroom representing disciplined long-term investment approach"
+              width="640"
+              height="800"
+              loading="lazy"
+            />
+          </div>
+          <div class="approach-main">
+            <div class="section-label reveal">
+              <span class="label-line"></span>
+              <span>Our Approach</span>
+            </div>
+            <h2 class="section-title reveal">Principled, patient, and criteria-driven.</h2>
+            <div class="approach-intro reveal">
+              <p>
+                True North operates with a clear investment philosophy: we own businesses for the long term.
+                We are not optimising for a near-term exit. We are not bound by fund timelines, outside
+                mandates, or third-party capital. Every decision is governed by what is right for our
+                portfolio over a multi-year horizon.
+              </p>
+              <p>
+                Our approach combines the analytical discipline of private equity with the strategic patience
+                of permanent ownership. We evaluate carefully, we act with conviction, and we stay committed
+                to the businesses we acquire.
+              </p>
+            </div>
+            <div class="pillars-grid">
+              <article class="pillar-card reveal">
+                <span class="pillar-num">I</span>
+                <h3>Long-term ownership</h3>
+                <p>
+                  We acquire businesses to own and operate them — not to flip them. Our holding mindset
+                  shapes how we evaluate deals, how we support management, and how we measure success.
+                </p>
+              </article>
+              <article class="pillar-card reveal">
+                <span class="pillar-num">II</span>
+                <h3>Internal capital advantage</h3>
+                <p>
+                  We deploy our own capital. There are no outside investors to satisfy, no fundraising cycles
+                  to manage. This gives us the freedom to move thoughtfully and close with certainty.
+                </p>
+              </article>
+              <article class="pillar-card reveal">
+                <span class="pillar-num">III</span>
+                <h3>Rigorous underwriting</h3>
+                <p>
+                  Every opportunity is evaluated against clear criteria: earnings quality, business model
+                  durability, competitive positioning, management depth, and long-term growth potential.
+                </p>
+              </article>
+              <article class="pillar-card reveal">
+                <span class="pillar-num">IV</span>
+                <h3>Confidential and respectful</h3>
+                <p>
+                  Business discussions are handled with the utmost discretion. Whether or not a transaction
+                  results, we respect the trust that owners and advisors place in us during the process.
+                </p>
+              </article>
+              <article class="pillar-card reveal">
+                <span class="pillar-num">V</span>
+                <h3>Marketable securities</h3>
+                <p>
+                  Disciplined allocation to public equity and fixed income markets as part of a diversified,
+                  long-term investment portfolio.
+                </p>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section section-muted">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Who We Are</p>
-          <h2>Independent, disciplined, and investor-aligned.</h2>
+    <section id="acquisitions" class="section section-dark">
+      <div class="container acquisitions-layout">
+        <div class="acquisitions-copy">
+          <div class="section-label reveal">
+            <span class="label-line"></span>
+            <span>Acquisitions</span>
+          </div>
+          <h2 class="section-title section-title-light reveal">We are actively looking to acquire.</h2>
+          <div class="acquisitions-intro reveal">
+            <p>
+              True North is an active acquirer. We are not a passive investor and we are not a short-term
+              financial buyer. We look for businesses with clear fundamentals, reliable operations, and the
+              potential for long-term growth — businesses we can own, improve, and build over time.
+            </p>
+            <p>
+              Our acquisition process is private, selective, and criteria-driven. Each opportunity is
+              reviewed carefully on its merits. If you are a business owner considering a transition, or
+              an advisor with a relevant mandate, we welcome a confidential conversation.
+            </p>
+          </div>
+
+          <div class="criteria-wrap reveal">
+            <h3 class="criteria-heading">Acquisition criteria</h3>
+            <table class="criteria-table">
+              <thead>
+                <tr>
+                  <th scope="col">What we look for</th>
+                  <th scope="col">Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Geography</th>
+                  <td>United States and select international markets — with a focus on established commercial and industrial businesses.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Business stage</th>
+                  <td>Established, operating businesses with a clear track record of revenue and profitability.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Industries</th>
+                  <td>Commercial and industrial sectors with durable demand and defensible positioning.</td>
+                </tr>
+                <tr>
+                  <th scope="row">What we look for</th>
+                  <td class="criteria-qualities">
+                    Clear revenue history · Strong or developable management · Opportunities for
+                    improvement or growth · Reasonable valuation expectations · A business model that can
+                    be understood and managed responsibly.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Deal structure</th>
+                  <td>Full acquisitions preferred. Strategic partnerships considered where well-structured and aligned.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Management</th>
+                  <td>We value capable management teams already in place. We are owners, not operators.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="outreach-block reveal">
+            <h3>We welcome contact from</h3>
+            <ul>
+              <li>Business owners considering a transition, partial exit, or sale</li>
+              <li>Operators open to a strategic partnership with a long-term minded acquirer</li>
+              <li>M&amp;A advisors and brokers representing acquisition mandates in our areas of interest</li>
+            </ul>
+            <a href="mailto:info@truenorthinvestment.com?subject=Acquisition%20enquiry" class="btn btn-primary">
+              info@truenorthinvestment.com
+            </a>
+          </div>
         </div>
-        <p>
-          True North Investment Advisory operates with a family office mindset: long-term perspective,
-          prudent risk management, and decision-making flexibility. We focus on opportunities that fit
-          well-defined investment objectives and uphold capital stewardship.
-        </p>
+        <div class="acquisitions-visual reveal">
+          <img
+            src="acquisitions.jpg"
+            alt="Strategic acquisition and business development discussion"
+            width="560"
+            height="720"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="container contact-box">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Discuss your investment objectives.</h2>
-          <p>For inquiries, reach out to our team for a confidential conversation.</p>
+    <section id="about" class="section">
+      <div class="container about-layout">
+        <div class="about-copy">
+          <div class="section-label reveal">
+            <span class="label-line"></span>
+            <span>About Us</span>
+          </div>
+          <h2 class="section-title reveal">Independent. Long-term. Privately held.</h2>
+          <div class="about-text reveal">
+            <p>
+              True North Investment is a private investment office with a clear mandate: acquire,
+              own, and build businesses for the long term. We operate independently, deploying our own
+              capital without outside investors or public mandates.
+            </p>
+            <p>
+              True North serves as the primary management vehicle for international business development
+              and acquisition activity. Where our broader activities include educational development within
+              Kuwait, True North is specifically focused on commercial and investment activity across
+              international, non-educational sectors.
+            </p>
+            <p>
+              True North also serves as the principal vehicle for family investment office functions, including
+              long-term capital stewardship, estate planning coordination, and the management of a
+              multi-jurisdictional investment portfolio.
+            </p>
+            <blockquote class="about-positioning">
+              We are not a fund. We are not seeking capital. We are a disciplined, experienced team with the
+              resources and the conviction to acquire good businesses and build them thoughtfully over time.
+            </blockquote>
+          </div>
         </div>
-        <a href="mailto:info@truenorthinvestment.com" class="btn btn-primary">info@truenorthinvestment.com</a>
+        <div class="about-visual reveal">
+          <img
+            src="about.jpg"
+            alt="City skyline representing international long-term investment perspective"
+            width="640"
+            height="800"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <div class="section-label">
+              <span class="label-line"></span>
+              <span>Contact</span>
+            </div>
+            <h2 class="section-title">Get in touch.</h2>
+            <p>
+              For acquisition-related enquiries or relevant business development correspondence, please reach
+              us directly by email. We review all relevant inbound communications and aim to respond within
+              a few business days.
+            </p>
+            <p class="contact-disclaimer">
+              True North does not provide investment advice and does not solicit investment from the public.
+            </p>
+          </div>
+          <div class="contact-card">
+            <a href="mailto:info@truenorthinvestment.com" class="contact-card-row">
+              <span class="contact-card-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+              <span class="contact-card-text">
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">info@truenorthinvestment.com</span>
+              </span>
+              <i class="fas fa-arrow-right contact-card-arrow" aria-hidden="true"></i>
+            </a>
+            <address class="contact-card-row">
+              <span class="contact-card-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+              <span class="contact-card-text">
+                <span class="contact-card-label">Address</span>
+                <span class="contact-card-value">
+                  3439 SE Hawthorne Blvd, No. 927<br />
+                  Portland, Oregon 97214-5048<br />
+                  United States
+                </span>
+              </span>
+            </address>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="footer-copy">
-        <h2 class="footer-title">Disclaimer</h2>
-        <p>
-          The information and materials on this website do not constitute investment advice and are not
-          intended as an offer or solicitation to invest. This content is not tax or legal advice; please
-          consult your own legal, tax, or financial advisors for your individual circumstances.
-        </p>
-        <p>
-          True North Management LLC is not affiliated with the named representative, broker-dealer, or
-          registered investment advisory firm. The opinions and materials provided are for general
-          information and should not be considered a solicitation for the purchase or sale of any security.
-        </p>
-        <p>
-          This communication is intended for clients based in North America, outside India, who are not
-          Non-Resident Indians or Persons of Indian Origin. No offers may be made or accepted from any
-          resident outside the specific regions referenced.
-        </p>
+    <div class="container footer-main">
+      <div class="footer-identity">
+        <a href="#home" class="footer-brand-link">
+          <img src="Logo.png" alt="" class="footer-logo" width="36" height="36" onerror="this.hidden=true" />
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">True North Investment</span>
+            <span class="footer-tagline">Private Investment Office</span>
+          </div>
+        </a>
       </div>
-      <div class="footer-bottom">
-        <p class="copyright">Copyright 2018 True North Management LLC  |  Developed by Stellar Codes</p>
-        <div class="footer-social" aria-label="Social media links">
-          <a href="mailto:info@truenorthinvestment.com" class="footer-social-link" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/true-north-investment-advisory" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
+      <div class="footer-connect">
+        <a href="mailto:info@truenorthinvestment.com" class="footer-icon-link" aria-label="Email us">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/true-north-investment-advisory"
+          class="footer-icon-link"
+          aria-label="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
+
+    <div class="container footer-divider-row">
+      <hr class="footer-divider" />
+    </div>
+
+    <div class="container footer-legal">
+      
+      <div class="footer-legal-body">
+        <p>
+          The information on this website is provided for general informational purposes only. It does not
+          constitute investment advice, legal advice, tax advice, an offer to sell securities, or a
+          solicitation to invest.
+        </p>
+        <p>
+          True North Investment does not seek capital from outside investors through this website.
+          Any business or acquisition discussion is subject to internal review, due diligence, and approval.
+        </p>
+        <p>
+          All information shared with True North in relation to potential business opportunities will be
+          treated with professional discretion. True North Management LLC is not affiliated with any named
+          representative, broker-dealer, or registered investment advisory firm.
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-copyright">© 2026 True North Management LLC. All rights reserved.</p>
+      <address class="footer-address">3439 SE Hawthorne Blvd, No. 927, Portland, Oregon 97214-5048, United States</address>
+    </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
