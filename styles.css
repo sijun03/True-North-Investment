@@ -1030,9 +1030,14 @@ a.contact-card-row:hover .contact-card-arrow {
     grid-template-columns: 1fr;
   }
 
-  .approach-visual,
+  .approach-visual {
+    position: static;
+    max-width: 480px;
+  }
+
   .acquisitions-visual {
     position: static;
+    order: -1;
     max-width: 480px;
   }
 
@@ -1212,6 +1217,19 @@ a.contact-card-row:hover .contact-card-arrow {
     padding-top: 0;
     padding-bottom: 8px;
     border-bottom: none;
+  }
+
+  .approach-visual,
+  .acquisitions-visual,
+  .about-visual {
+    max-width: 100%;
+  }
+
+  .approach-visual img,
+  .acquisitions-visual img,
+  .about-visual img {
+    aspect-ratio: 16 / 10;
+    max-height: 300px;
   }
 }
 
