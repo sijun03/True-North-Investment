@@ -147,7 +147,7 @@ p {
 .section-title {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
   margin-bottom: 28px;
-  max-width: 16ch;
+  max-width: 26ch;
   letter-spacing: -0.02em;
 }
 
