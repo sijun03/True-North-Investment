@@ -720,7 +720,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 0.85fr;
   gap: clamp(40px, 6vw, 72px);
-  align-items: center;
+  align-items: start;
 }
 
 .about-text {
@@ -739,6 +739,8 @@ p {
 }
 
 .about-visual {
+  position: sticky;
+  top: calc(var(--header-h) + 32px);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -1042,6 +1044,7 @@ a.contact-card-row:hover .contact-card-arrow {
   }
 
   .about-visual {
+    position: static;
     order: -1;
     max-width: 520px;
   }
