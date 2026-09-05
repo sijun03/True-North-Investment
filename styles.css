@@ -200,18 +200,10 @@ p {
 }
 
 .site-header.is-scrolled {
-  background: rgba(244, 241, 235, 0.92);
-  border-bottom-color: var(--line);
+  background: rgba(10, 18, 32, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(14px);
-  box-shadow: 0 4px 24px rgba(10, 18, 32, 0.06);
-}
-
-.site-header.is-scrolled .nav-list a {
-  color: var(--slate);
-}
-
-.site-header.is-scrolled .nav-toggle {
-  border-color: var(--line);
+  box-shadow: 0 4px 24px rgba(10, 18, 32, 0.25);
 }
 
 .header-inner {
@@ -235,15 +227,6 @@ p {
   width: auto;
   display: block;
   object-fit: contain;
-}
-
-/* The logo artwork is light-on-transparent (designed for dark grounds). The
-   header goes from a dark hero backdrop to a light scrolled backdrop, so we
-   give it a dark chip to sit on once the header itself turns light. */
-.site-header.is-scrolled .brand-logo-full {
-  background: var(--ink);
-  padding: 8px 14px;
-  border-radius: var(--radius);
 }
 
 .site-nav {
@@ -287,11 +270,6 @@ p {
   color: #fff;
 }
 
-.site-header.is-scrolled .nav-list a:hover,
-.site-header.is-scrolled .nav-list a.is-active {
-  color: var(--ink);
-}
-
 .nav-list a.is-active::after,
 .nav-list a:hover::after {
   width: 100%;
@@ -318,10 +296,6 @@ p {
   margin: 0 auto;
   background: #f4f1eb;
   transition: background 0.2s ease;
-}
-
-.site-header.is-scrolled .nav-toggle-bar {
-  background: var(--ink);
 }
 
 /* Buttons */
@@ -1084,26 +1058,8 @@ a.contact-card-row:hover .contact-card-arrow {
     display: none;
   }
 
-  .site-header {
-    background: rgba(244, 241, 235, 0.92);
-    border-bottom-color: var(--line);
-    backdrop-filter: blur(14px);
-  }
-
-  .site-header .brand-logo-full {
+  .brand-logo-full {
     height: 40px;
-    background: var(--ink);
-    padding: 6px 12px;
-    border-radius: var(--radius);
-  }
-
-  .site-header .nav-toggle {
-    border-color: var(--line);
-    background: var(--white);
-  }
-
-  .site-header .nav-toggle-bar {
-    background: var(--ink);
   }
 
   .hero {
