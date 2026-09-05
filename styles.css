@@ -200,10 +200,28 @@ p {
 }
 
 .site-header.is-scrolled {
-  background: rgba(10, 18, 32, 0.92);
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: #f4f1eb;
+  border-bottom-color: var(--line);
   backdrop-filter: blur(14px);
-  box-shadow: 0 4px 24px rgba(10, 18, 32, 0.25);
+  box-shadow: 0 4px 24px rgba(10, 18, 32, 0.06);
+}
+
+.site-header.is-scrolled .nav-list a {
+  color: var(--slate);
+}
+
+.site-header.is-scrolled .nav-list a:hover,
+.site-header.is-scrolled .nav-list a.is-active {
+  color: var(--ink);
+}
+
+.site-header.is-scrolled .nav-toggle {
+  border-color: var(--line);
+  background: var(--white);
+}
+
+.site-header.is-scrolled .nav-toggle-bar {
+  background: var(--ink);
 }
 
 .header-inner {
@@ -225,8 +243,23 @@ p {
 .brand-logo-full {
   height: 62px;
   width: auto;
-  display: block;
   object-fit: contain;
+}
+
+/* The logo is a single flat color (currently #f4f1eb). The header goes from
+   a dark hero backdrop to a light scrolled backdrop, so we swap in an
+   ink-colored variant of the same artwork once scrolled, rather than a
+   background chip behind it. */
+.brand-logo-dark {
+  display: none;
+}
+
+.site-header.is-scrolled .brand-logo-light {
+  display: none;
+}
+
+.site-header.is-scrolled .brand-logo-dark {
+  display: block;
 }
 
 .site-nav {
