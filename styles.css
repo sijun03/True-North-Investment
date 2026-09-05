@@ -210,10 +210,6 @@ p {
   color: var(--slate);
 }
 
-.site-header.is-scrolled .brand-name {
-  color: var(--ink);
-}
-
 .site-header.is-scrolled .nav-toggle {
   border-color: var(--line);
 }
@@ -234,56 +230,20 @@ p {
   text-decoration: none;
 }
 
-.brand-logo {
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius);
+.brand-logo-full {
+  height: 52px;
+  width: auto;
+  display: block;
   object-fit: contain;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.06);
 }
 
-.site-header.is-scrolled .brand-logo {
-  border-color: var(--line);
-  background: var(--white);
-}
-
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  color: #f4f1eb;
-  flex-shrink: 0;
-}
-
-.site-header.is-scrolled .brand-mark {
-  color: var(--ink);
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-.brand-name {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  color: #f4f1eb;
-  line-height: 1.2;
-  max-width: 200px;
-}
-
-.brand-sub {
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(244, 241, 235, 0.45);
-  line-height: 1;
-}
-
-.site-header.is-scrolled .brand-sub {
-  color: var(--muted);
+/* The logo artwork is light-on-transparent (designed for dark grounds). The
+   header goes from a dark hero backdrop to a light scrolled backdrop, so we
+   give it a dark chip to sit on once the header itself turns light. */
+.site-header.is-scrolled .brand-logo-full {
+  background: var(--ink);
+  padding: 8px 14px;
+  border-radius: var(--radius);
 }
 
 .site-nav {
@@ -869,38 +829,28 @@ a.contact-card-row:hover .contact-card-arrow {
 .footer-identity {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .footer-brand-link {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
 }
 
-.footer-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius);
-  opacity: 0.88;
-  flex-shrink: 0;
-}
-
-.footer-brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.footer-brand-name {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  color: #e8edf5;
-  line-height: 1.2;
+.footer-logo-full {
+  height: 40px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .footer-tagline {
   margin: 0;
+  max-width: 42ch;
   font-size: 0.78rem;
   color: #4e6278;
   letter-spacing: 0.02em;
@@ -1134,28 +1084,17 @@ a.contact-card-row:hover .contact-card-arrow {
     display: none;
   }
 
-  .brand-name {
-    color: var(--ink);
-    max-width: calc(100vw - 120px);
-  }
-
-  .brand-sub {
-    color: var(--muted);
-  }
-
   .site-header {
     background: rgba(244, 241, 235, 0.92);
     border-bottom-color: var(--line);
     backdrop-filter: blur(14px);
   }
 
-  .site-header .brand-logo {
-    border-color: var(--line);
-    background: var(--white);
-  }
-
-  .site-header .brand-mark {
-    color: var(--ink);
+  .site-header .brand-logo-full {
+    height: 40px;
+    background: var(--ink);
+    padding: 6px 12px;
+    border-radius: var(--radius);
   }
 
   .site-header .nav-toggle {
