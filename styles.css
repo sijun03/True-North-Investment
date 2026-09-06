@@ -109,7 +109,7 @@ p {
 }
 
 .container {
-  width: min(1160px, 90%);
+  width: min(1260px, 90%);
   margin: 0 auto;
 }
 
@@ -233,7 +233,7 @@ p {
 }
 
 .header-inner {
-  width: min(1160px, 90%);
+  width: min(1260px, 90%);
   margin: 0 auto;
   display: flex;
   align-items: center;
