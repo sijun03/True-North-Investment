@@ -977,6 +977,15 @@ a.contact-card-row:hover .contact-card-arrow {
   color: #3d5168;
 }
 
+.footer-phone-link {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-phone-link:hover {
+  color: var(--bronze-light);
+}
+
 /* Reveal */
 .reveal {
   opacity: 0;
